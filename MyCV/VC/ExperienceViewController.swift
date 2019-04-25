@@ -11,14 +11,14 @@ import UIKit
 class ExperienceViewController: UIViewController {
     
     // MARK: -Properties
-    let projects = [
-        Experience(name: "Foober", work: "Swift, Firebase", period: "3 days"),
-        Experience(name: "Problem Solver", work: "Python, Django, MongoDB", period: "25 days"),
+    static let projects = [
+        Experience(type: "Project", name: "Foober", work: "Swift, Firebase", period: "3 days", url: "NONE"),
+        Experience(type: "Project", name: "Problem Solver", work: "Python, Django, MongoDB", period: "25 days", url: "NONE"),
     ]
     
-    let volunteering = [
-        Experience(name: "Data Science Summer School", work: "Orginiser", period: "16.07.2018 - 02.08.2018"),
-        Experience(name: "IT-Arena 2018", work: "Communicating with people", period: "29.09.2018 - 01.10.2018")
+    static let volunteering = [
+        Experience(type: "Volunteering", name: "Data Science Summer School", work: "Orginiser", period: "16.07.2018 - 02.08.2018", url: "https://apps.ucu.edu.ua/summerschool/"),
+        Experience(type: "Volunteering", name: "IT-Arena 2018", work: "Communicating with people", period: "29.09.2018 - 01.10.2018", url: "https://itarena.ua/")
     ]
     
     // MARK: -IBOutlets
@@ -29,13 +29,15 @@ class ExperienceViewController: UIViewController {
         super.viewDidLoad()
 
         tableView.tableFooterView = UIView()
-        self.tableView.rowHeight = 60
+        self.tableView.rowHeight = 90
         
         self.tableView.reloadData()
         
         tableView.dataSource = self
         tableView.delegate = self
-        // Do any additional setup after loading the view.
+
+        let nibName = UINib(nibName: "ExperienceShowTableViewCell", bundle: nil)
+        tableView.register(nibName, forCellReuseIdentifier: "experienceShowTableViewCell")
     }
 }
 
@@ -47,18 +49,19 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
-        case 0: return projects.count
-        case 1: return volunteering.count
+        case 0: return ExperienceViewController.projects.count
+        case 1: return ExperienceViewController.volunteering.count
         default: fatalError()
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "experienceShowTableViewCell") as! ExperienceShowTableViewCell
         
         switch indexPath.section {
-        case 0: cell.textLabel?.text = "\(projects[indexPath.row].name)"
-        case 1: cell.textLabel?.text = "\(volunteering[indexPath.row].name)"
+        case 0: cell.commonInit(exp: ExperienceViewController.projects[indexPath.row])
+        case 1: cell.commonInit(exp: ExperienceViewController.volunteering[indexPath.row])
         default: fatalError()
         }
         
@@ -70,6 +73,21 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource {
         case 0: return "PROJECTS"
         case 1: return "VOLUNTEERING"
         default: fatalError()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showExperienceInfoDummy", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? InfoViewController {
+//            switch tableView.numberOfSections {
+            
+            destination.experience = ExperienceViewController.volunteering[(tableView.indexPathForSelectedRow?.row)!]
+//            case 1: destination.experience = ExperienceViewController.volunteering[(tableView.indexPathForSelectedRow?.row)!]
+//            default: fatalError()
+//            }
         }
     }
     

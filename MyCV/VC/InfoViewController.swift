@@ -12,22 +12,48 @@ class InfoViewController: UIViewController {
     
     // MARK: -Properties
     var experience: Experience? = nil
+    
+    // MARK: -IBOutlets
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var periodLabel: UILabel!
+    @IBOutlet weak var additionalLabel: UILabel!
+    @IBOutlet weak var showButton: UIButton!
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        config()
 
+        if (experience?.type == "Project") {
+            nameLabel.text = "Name of the project: '\(experience?.name ?? "No info")'"
+            periodLabel.text = "Spent time: \(experience?.period ?? "No info")"
+            additionalLabel.text = "Technology used: \(experience?.work ?? "No info")"
+            showButton.isHidden = true
+        } else {
+            nameLabel.text = "Name of the event: '\(experience?.name ?? "No info")'"
+            periodLabel.text = "Period: \(experience?.period ?? "No info")"
+            additionalLabel.text = "Responsibility: \(experience?.work ?? "No info")"
+            showButton.isHidden = false
+        }
+        
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func config() {
+        nameLabel.lineBreakMode = .byWordWrapping
+        nameLabel.numberOfLines = 0
+        additionalLabel.lineBreakMode = .byWordWrapping
+        additionalLabel.numberOfLines = 0
     }
-    */
+    
+
+    // MARK: -Actions
+    @IBAction func testTapped(_ sender: Any) {
+        UIApplication.shared.openURL(NSURL(string: experience!.url)! as URL)
+    }
+    
 
 }

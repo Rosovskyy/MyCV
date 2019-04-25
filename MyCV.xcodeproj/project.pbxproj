@@ -11,6 +11,8 @@
 		C91A1455226B40FE0087035B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91A1453226B40FE0087035B /* Main.storyboard */; };
 		C91A1458226B40FE0087035B /* MyCV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C91A1456226B40FE0087035B /* MyCV.xcdatamodeld */; };
 		C91A145D226B41010087035B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91A145B226B41010087035B /* LaunchScreen.storyboard */; };
+		C935BD6022720FC1001528F8 /* ExperienceShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935BD5E22720FC1001528F8 /* ExperienceShowTableViewCell.swift */; };
+		C935BD6122720FC1001528F8 /* ExperienceShowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C935BD5F22720FC1001528F8 /* ExperienceShowTableViewCell.xib */; };
 		C97304D02270AED10057FA79 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97304CF2270AED10057FA79 /* UIApplication+Extension.swift */; };
 		C97304D22270B0030057FA79 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97304D12270B0030057FA79 /* Experience.swift */; };
 		C97304D42270B5BE0057FA79 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97304D32270B5BE0057FA79 /* ExperienceViewController.swift */; };
@@ -30,6 +32,8 @@
 		C91A1457226B40FE0087035B /* MyCV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCV.xcdatamodel; sourceTree = "<group>"; };
 		C91A145C226B41010087035B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C91A145E226B41010087035B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C935BD5E22720FC1001528F8 /* ExperienceShowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceShowTableViewCell.swift; sourceTree = "<group>"; };
+		C935BD5F22720FC1001528F8 /* ExperienceShowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExperienceShowTableViewCell.xib; sourceTree = "<group>"; };
 		C97304CF2270AED10057FA79 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		C97304D12270B0030057FA79 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		C97304D32270B5BE0057FA79 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
@@ -72,9 +76,10 @@
 		C91A144E226B40FE0087035B /* MyCV */ = {
 			isa = PBXGroup;
 			children = (
-				C980D881226CB6B1004D34B2 /* Extensions */,
-				C980D87E226CB214004D34B2 /* Constants */,
 				C91A1464226B41E80087035B /* VC */,
+				C980D881226CB6B1004D34B2 /* Extensions */,
+				C935BD5D22720F97001528F8 /* Cell */,
+				C980D87E226CB214004D34B2 /* Constants */,
 				C91A1465226B41F60087035B /* Supporting Files */,
 				C91A1466226B421C0087035B /* Resources */,
 			);
@@ -110,6 +115,15 @@
 				C91A1456226B40FE0087035B /* MyCV.xcdatamodeld */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C935BD5D22720F97001528F8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C935BD5E22720FC1001528F8 /* ExperienceShowTableViewCell.swift */,
+				C935BD5F22720FC1001528F8 /* ExperienceShowTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C980D87E226CB214004D34B2 /* Constants */ = {
@@ -189,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C935BD6122720FC1001528F8 /* ExperienceShowTableViewCell.xib in Resources */,
 				C91A145D226B41010087035B /* LaunchScreen.storyboard in Resources */,
 				C980D87D226CB0E4004D34B2 /* Assets.xcassets in Resources */,
 				C91A1455226B40FE0087035B /* Main.storyboard in Resources */,
@@ -210,6 +225,7 @@
 				C97304D22270B0030057FA79 /* Experience.swift in Sources */,
 				C97304D02270AED10057FA79 /* UIApplication+Extension.swift in Sources */,
 				C980D880226CB23A004D34B2 /* InfoText.swift in Sources */,
+				C935BD6022720FC1001528F8 /* ExperienceShowTableViewCell.swift in Sources */,
 				C990777E22707A550044FEE9 /* SkillsViewController.swift in Sources */,
 				C91A1458226B40FE0087035B /* MyCV.xcdatamodeld in Sources */,
 				C980D885226CBC0A004D34B2 /* UIButton+Extension.swift in Sources */,

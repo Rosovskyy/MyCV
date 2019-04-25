@@ -25,21 +25,18 @@ class SkillsViewController: UIViewController {
         super.viewDidLoad()
         
         
-        transform(swiftProgressView, 7)
-        transform(jsProgressView, 6)
-        transform(cProgressView, 7)
-        transform(mySQLProgressView, 9)
+        transform(swiftProgressView, 7, 1, 5)
+        transform(jsProgressView, 6, 1, 5)
+        transform(cProgressView, 7, 1, 5)
+        transform(mySQLProgressView, 9, 1, 5)
         
-        explenationLabel.layer.borderColor = UIColor.green.cgColor
-        explenationLabel.layer.borderWidth = 3.0
-
         // Do any additional setup after loading the view.
     }
     
-    func transform(_ view: UIProgressView, _ progress: Int) {
+    func transform(_ view: UIProgressView, _ progress: Int, _ x: Int, _ y: Int) {
         self.progress.completedUnitCount = Int64(progress)
         
-        view.transform = view.transform.scaledBy(x: 1, y: 5)
+        view.transform = view.transform.scaledBy(x: CGFloat(x), y: CGFloat(y))
         
         view.progress = 0
         

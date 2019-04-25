@@ -10,21 +10,9 @@ import Foundation
 
 
 struct Experience {
+    let type: String
     let name: String
     let work: String
     let period: String
-    // let volunteering: [Volunteering] = []
-    // let project: [Project] = []
-}
-
-struct Volunteering {
-    let name: String
-    let period: String
-    let work: String
-}
-
-struct Project {
-    let name: String
-    let time: Int
-    let technologies: String
+    let url: String
 }
