@@ -23,21 +23,24 @@ class ExperienceViewController: UIViewController {
     
     // MARK: -IBOutlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var rainbowGif: UIImageView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.rainbowGif.loadGif(name: "rainbow")
+        
         tableView.tableFooterView = UIView()
         self.tableView.rowHeight = 90
         
         self.tableView.reloadData()
         
-        tableView.dataSource = self
-        tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
 
         let nibName = UINib(nibName: "ExperienceShowTableViewCell", bundle: nil)
-        tableView.register(nibName, forCellReuseIdentifier: "experienceShowTableViewCell")
+        self.tableView.register(nibName, forCellReuseIdentifier: "experienceShowTableViewCell")
     }
 }
 

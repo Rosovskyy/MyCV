@@ -18,6 +18,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var aboutMeButton: UIButton!
     @IBOutlet var allButtons: [UIButton]!
+    @IBOutlet weak var nyanCatGif: UIImageView!
     
 
     override func viewDidLoad() {
@@ -29,8 +30,10 @@ class ProfileViewController: UIViewController {
         self.mainText.numberOfLines = 0
         
         self.mainText.attributedText = changeTextColor(self.text.aboutMe, "Swift, C++ and HTML/CSS", UIColor.blue)
+        
+        self.nyanCatGif.loadGif(name: "b04")
     
-        aboutMeButton.setBottomBorder(UIColor.orange)
+        self.aboutMeButton.setBottomBorder(UIColor.orange)
     }
     
     func changeBackgroundForButtons(_ sender: Any) {

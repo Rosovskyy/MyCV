@@ -19,11 +19,13 @@ class SkillsViewController: UIViewController {
     @IBOutlet weak var cProgressView: UIProgressView!
     @IBOutlet weak var mySQLProgressView: UIProgressView!
     @IBOutlet weak var explenationLabel: UIStackView!
+    @IBOutlet weak var nyanCatGif: UIImageView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.nyanCatGif.loadGif(name: "b04")
         
         transform(swiftProgressView, 7, 1, 5)
         transform(jsProgressView, 6, 1, 5)
