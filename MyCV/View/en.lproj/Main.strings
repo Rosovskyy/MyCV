@@ -1,0 +1,72 @@
+
+/* Class = "UILabel"; text = "in the particular sphere"; ObjectID = "1gm-2d-IOy"; */
+"1gm-2d-IOy.text" = "in the particular sphere";
+
+/* Class = "UILabel"; text = "C++"; ObjectID = "5Rj-P0-mav"; */
+"5Rj-P0-mav.text" = "C++";
+
+/* Class = "UILabel"; text = "Technology:"; ObjectID = "HI5-gh-j8D"; */
+"HI5-gh-j8D.text" = "Technology:";
+
+/* Class = "UILabel"; text = "Serhii Rosovskyi"; ObjectID = "HJ1-hZ-4l2"; */
+"HJ1-hZ-4l2.text" = "Serhii Rosovskyi";
+
+/* Class = "UIButton"; normalTitle = "About me"; ObjectID = "J08-4O-ESf"; */
+"J08-4O-ESf.normalTitle" = "About me";
+
+/* Class = "UILabel"; text = "The end of the line is a strong"; ObjectID = "JDc-rV-1qJ"; */
+"JDc-rV-1qJ.text" = "The end of the line is a strong";
+
+/* Class = "UIButton"; normalTitle = "Show source"; ObjectID = "LuT-8l-YuD"; */
+"LuT-8l-YuD.normalTitle" = "Show source";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Q1Y-pa-6Cn"; */
+"Q1Y-pa-6Cn.title" = "Back";
+
+/* Class = "UILabel"; text = "Junior Developer"; ObjectID = "Rsh-tM-PgT"; */
+"Rsh-tM-PgT.text" = "Junior Developer";
+
+/* Class = "UINavigationItem"; title = "Experience"; ObjectID = "SVT-L9-7L9"; */
+"SVT-L9-7L9.title" = "Experience";
+
+/* Class = "UILabel"; text = "MySQL"; ObjectID = "WW0-8f-q9V"; */
+"WW0-8f-q9V.text" = "MySQL";
+
+/* Class = "UINavigationItem"; title = "Source"; ObjectID = "WYr-aZ-eDw"; */
+"WYr-aZ-eDw.title" = "Source";
+
+/* Class = "UILabel"; text = "Period:"; ObjectID = "Y0J-rK-bH9"; */
+"Y0J-rK-bH9.text" = "Period:";
+
+/* Class = "UILabel"; text = "Swift"; ObjectID = "Z5w-Pk-Vy5"; */
+"Z5w-Pk-Vy5.text" = "Swift";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "cd6-LK-ygC"; */
+"cd6-LK-ygC.text" = "Label";
+
+/* Class = "UILabel"; text = "Type:"; ObjectID = "dPW-ve-Bpg"; */
+"dPW-ve-Bpg.text" = "Type:";
+
+/* Class = "UIButton"; normalTitle = "Education"; ObjectID = "eQj-7z-HGk"; */
+"eQj-7z-HGk.normalTitle" = "Education";
+
+/* Class = "UINavigationItem"; title = "Skills"; ObjectID = "f5e-rS-Cso"; */
+"f5e-rS-Cso.title" = "Skills";
+
+/* Class = "UILabel"; text = "P.S. I hope :)"; ObjectID = "jSb-ZO-d1c"; */
+"jSb-ZO-d1c.text" = "P.S. I hope :)";
+
+/* Class = "UILabel"; text = "JavaScript"; ObjectID = "lal-Cf-lAf"; */
+"lal-Cf-lAf.text" = "JavaScript";
+
+/* Class = "UILabel"; text = "GPA: 87.6 / 100"; ObjectID = "mn5-ad-A8F"; */
+"mn5-ad-A8F.text" = "GPA: 87.6 / 100";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "pJ3-gs-g1u"; */
+"pJ3-gs-g1u.title" = "Profile";
+
+/* Class = "UILabel"; text = "Ukrainian Catholic University"; ObjectID = "sZC-Ea-jEg"; */
+"sZC-Ea-jEg.text" = "Ukrainian Catholic University";
+
+/* Class = "UIButton"; normalTitle = "Contacts"; ObjectID = "ub8-Yq-A9c"; */
+"ub8-Yq-A9c.normalTitle" = "Contacts";

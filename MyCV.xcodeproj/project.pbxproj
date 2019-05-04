@@ -16,10 +16,8 @@
 		C923E63B227DE47E009FAF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C923E63A227DE47C009FAF21 /* Assets.xcassets */; };
 		C935BD6022720FC1001528F8 /* ExperienceShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935BD5E22720FC1001528F8 /* ExperienceShowTableViewCell.swift */; };
 		C935BD6122720FC1001528F8 /* ExperienceShowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C935BD5F22720FC1001528F8 /* ExperienceShowTableViewCell.xib */; };
-		C94D7417227DE858008653AB /* b04.gif in Resources */ = {isa = PBXBuildFile; fileRef = C94D7416227DE857008653AB /* b04.gif */; };
 		C94D741B227E2BC7008653AB /* bart.gif in Resources */ = {isa = PBXBuildFile; fileRef = C94D741A227E2BC7008653AB /* bart.gif */; };
 		C94D741D227E2CBA008653AB /* letter.gif in Resources */ = {isa = PBXBuildFile; fileRef = C94D741C227E2CBA008653AB /* letter.gif */; };
-		C94D741F227E2E9D008653AB /* rainbow.gif in Resources */ = {isa = PBXBuildFile; fileRef = C94D741E227E2E9C008653AB /* rainbow.gif */; };
 		C97304D02270AED10057FA79 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97304CF2270AED10057FA79 /* UIApplication+Extension.swift */; };
 		C97304D22270B0030057FA79 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97304D12270B0030057FA79 /* Experience.swift */; };
 		C97304D42270B5BE0057FA79 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97304D32270B5BE0057FA79 /* ExperienceViewController.swift */; };
@@ -29,6 +27,9 @@
 		C980D883226CB6DD004D34B2 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C980D882226CB6DD004D34B2 /* UIImageView+Extension.swift */; };
 		C980D885226CBC0A004D34B2 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C980D884226CBC0A004D34B2 /* UIButton+Extension.swift */; };
 		C990777E22707A550044FEE9 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990777D22707A550044FEE9 /* SkillsViewController.swift */; };
+		C99BAF8F227E33FF00DFF142 /* b04.gif in Resources */ = {isa = PBXBuildFile; fileRef = C99BAF8E227E33FE00DFF142 /* b04.gif */; };
+		C99BAF91227E340F00DFF142 /* rainbow.gif in Resources */ = {isa = PBXBuildFile; fileRef = C99BAF90227E340F00DFF142 /* rainbow.gif */; };
+		C99BAF94227E350800DFF142 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C99BAF92227E350800DFF142 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,10 +44,9 @@
 		C923E63A227DE47C009FAF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C935BD5E22720FC1001528F8 /* ExperienceShowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceShowTableViewCell.swift; sourceTree = "<group>"; };
 		C935BD5F22720FC1001528F8 /* ExperienceShowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExperienceShowTableViewCell.xib; sourceTree = "<group>"; };
-		C94D7416227DE857008653AB /* b04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = b04.gif; path = ../../../../../../../Users/serhiyrosovskyy/Desktop/b04.gif; sourceTree = "<group>"; };
 		C94D741A227E2BC7008653AB /* bart.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = bart.gif; path = ../../../../../../../Users/serhiyrosovskyy/Desktop/bart.gif; sourceTree = "<group>"; };
 		C94D741C227E2CBA008653AB /* letter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = letter.gif; path = ../../../../../../../Users/serhiyrosovskyy/Desktop/letter.gif; sourceTree = "<group>"; };
-		C94D741E227E2E9C008653AB /* rainbow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = rainbow.gif; path = ../../../../../../../Users/serhiyrosovskyy/Desktop/rainbow.gif; sourceTree = "<group>"; };
+		C94D7421227E30C1008653AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		C97304CF2270AED10057FA79 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		C97304D12270B0030057FA79 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		C97304D32270B5BE0057FA79 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +56,12 @@
 		C980D882226CB6DD004D34B2 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		C980D884226CBC0A004D34B2 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		C990777D22707A550044FEE9 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
+		C99BAF8E227E33FE00DFF142 /* b04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = b04.gif; path = ../../../../../.Trashes/501/b04.gif; sourceTree = "<group>"; };
+		C99BAF90227E340F00DFF142 /* rainbow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = rainbow.gif; path = ../../../../../../../Users/serhiyrosovskyy/.Trash/rainbow.gif; sourceTree = "<group>"; };
+		C99BAF93227E350800DFF142 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C99BAF95227E354300DFF142 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
+		C99BAF96227E354300DFF142 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C99BAF97227E354400DFF142 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +108,12 @@
 		C91A1464226B41E80087035B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C94D741E227E2E9C008653AB /* rainbow.gif */,
-				C94D7416227DE857008653AB /* b04.gif */,
 				C94D741C227E2CBA008653AB /* letter.gif */,
+				C99BAF8E227E33FE00DFF142 /* b04.gif */,
+				C99BAF90227E340F00DFF142 /* rainbow.gif */,
 				C94D741A227E2BC7008653AB /* bart.gif */,
 				C935BD5D22720F97001528F8 /* Cell */,
+				C99BAF98227E354C00DFF142 /* Local */,
 				C91A1453226B40FE0087035B /* Main.storyboard */,
 				C980D87A226CABD6004D34B2 /* ProfileViewController.swift */,
 				C990777D22707A550044FEE9 /* SkillsViewController.swift */,
@@ -173,6 +180,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C99BAF98227E354C00DFF142 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				C99BAF92227E350800DFF142 /* Localizable.strings */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,6 +235,7 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
 			);
 			mainGroup = C91A1443226B40FE0087035B;
 			productRefGroup = C91A144D226B40FE0087035B /* Products */;
@@ -237,11 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C935BD6122720FC1001528F8 /* ExperienceShowTableViewCell.xib in Resources */,
+				C99BAF8F227E33FF00DFF142 /* b04.gif in Resources */,
 				C94D741B227E2BC7008653AB /* bart.gif in Resources */,
 				C91A145D226B41010087035B /* LaunchScreen.storyboard in Resources */,
-				C94D741F227E2E9D008653AB /* rainbow.gif in Resources */,
+				C99BAF94227E350800DFF142 /* Localizable.strings in Resources */,
+				C99BAF91227E340F00DFF142 /* rainbow.gif in Resources */,
 				C923E63B227DE47E009FAF21 /* Assets.xcassets in Resources */,
-				C94D7417227DE858008653AB /* b04.gif in Resources */,
 				C94D741D227E2CBA008653AB /* letter.gif in Resources */,
 				C91A1455226B40FE0087035B /* Main.storyboard in Resources */,
 			);
@@ -277,6 +294,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				C91A1454226B40FE0087035B /* Base */,
+				C94D7421227E30C1008653AB /* en */,
+				C99BAF95227E354300DFF142 /* uk */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -285,8 +304,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				C91A145C226B41010087035B /* Base */,
+				C99BAF96227E354300DFF142 /* uk */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C99BAF92227E350800DFF142 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99BAF93227E350800DFF142 /* en */,
+				C99BAF97227E354400DFF142 /* uk */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -296,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -357,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

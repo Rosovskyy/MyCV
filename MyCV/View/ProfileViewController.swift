@@ -29,7 +29,7 @@ class ProfileViewController: UIViewController {
         self.mainText.lineBreakMode = .byWordWrapping
         self.mainText.numberOfLines = 0
         
-        self.mainText.attributedText = changeTextColor(self.text.aboutMe, "Swift, C++ and HTML/CSS", UIColor.blue)
+        self.mainText.text = NSLocalizedString("aboutMeInfo", comment: "About Me Info")
         
         self.nyanCatGif.loadGif(name: "b04")
     
@@ -48,16 +48,6 @@ class ProfileViewController: UIViewController {
         }
     }
     
-    func changeTextColor(_ fullText: String, _ part: String, _ color: UIColor) -> NSMutableAttributedString {
-        let range = (fullText as NSString).range(of: part as String)
-        
-        let attribute = NSMutableAttributedString.init(string: fullText)
-        attribute.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
-        
-        return attribute
-    }
-    
-    
     // MARK: -Actions
     
     @IBAction func aboutMeTapped(_ sender: Any) {
@@ -65,13 +55,13 @@ class ProfileViewController: UIViewController {
         
         aboutMeButton.setBottomBorder(UIColor.orange)
         
-        self.mainText.attributedText = changeTextColor(self.text.aboutMe, "Swift, C++ and HTML/CSS", UIColor.blue)
+        self.mainText.text = NSLocalizedString("aboutMeInfo", comment: "About Me Info")
     }
     
     @IBAction func educationTapped(_ sender: Any) {
         changeBackgroundForButtons(sender)
         
-        self.mainText.text = self.text.education
+        self.mainText.text = NSLocalizedString("educationInfo", comment: "Education Info") // self.text.education
     }
     
     
@@ -79,7 +69,7 @@ class ProfileViewController: UIViewController {
         
         changeBackgroundForButtons(sender)
         
-        self.mainText.text = self.text.contacts
+        self.mainText.text = NSLocalizedString("contactsInfo", comment: "Contacts info")
         
     }
     

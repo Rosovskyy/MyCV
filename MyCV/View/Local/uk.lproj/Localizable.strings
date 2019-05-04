@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  MyCV
+
+  Created by Serhiy Rosovskyy on 5/5/19.
+  Copyright © 2019 Serhiy Rosovskyy. All rights reserved.
+*/
+
+
+"educationInfo" = "Український Католицький Університет \Комп'ютерні Науки \n\n IOS Технології: \n ▪️ Swift \n ▪️ UIKit \n ▪️ Firebase \n ▪️ CoreData \n ▪️ MapKit";
+"aboutMeInfo" = "Студент Українського Католицького Університету(Комп'ютерні Науки). Маю впевнене знання об'єктно-орієнтованого програмування, структур даних, зокрема: Swift, C++ and HTML/CSS. Аналітичні навички та вміння вирішувати складні технічні проблеми. Я отримую задоволення кожен раз, коли мій код працює. \nЯ шукаю цікаві і різноманітні проекти і людей з однаковим типом мислення.";
+"contactsInfo" = " Номер телефону: +380993153160 \n\n Пошта: rosovskyy@ucu.edu.ua \n\n Linkedin: Serhii Rosovskyi";
