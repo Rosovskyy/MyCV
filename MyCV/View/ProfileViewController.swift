@@ -31,7 +31,7 @@ class ProfileViewController: UIViewController {
         
         self.mainText.text = NSLocalizedString("aboutMeInfo", comment: "About Me Info")
         
-        self.nyanCatGif.loadGif(name: "b04")
+        self.nyanCatGif.loadGif(name: "nyancat")
     
         self.aboutMeButton.setBottomBorder(UIColor.orange)
     }

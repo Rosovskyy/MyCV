@@ -25,20 +25,19 @@ class SkillsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.nyanCatGif.loadGif(name: "b04")
+        self.nyanCatGif.loadGif(name: "nyancat")
         
-        transform(swiftProgressView, 7, 1, 5)
-        transform(jsProgressView, 6, 1, 5)
-        transform(cProgressView, 7, 1, 5)
-        transform(mySQLProgressView, 9, 1, 5)
+        transform(swiftProgressView, 7)
+        transform(jsProgressView, 6)
+        transform(cProgressView, 7)
+        transform(mySQLProgressView, 9)
         
-        // Do any additional setup after loading the view.
     }
     
-    func transform(_ view: UIProgressView, _ progress: Int, _ x: Int, _ y: Int) {
+    func transform(_ view: UIProgressView, _ progress: Int) {
         self.progress.completedUnitCount = Int64(progress)
         
-        view.transform = view.transform.scaledBy(x: CGFloat(x), y: CGFloat(y))
+        view.transform = view.transform.scaledBy(x: CGFloat(1), y: CGFloat(5))
         
         view.progress = 0
         

@@ -25,11 +25,11 @@
 		C980D883226CB6DD004D34B2 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C980D882226CB6DD004D34B2 /* UIImageView+Extension.swift */; };
 		C980D885226CBC0A004D34B2 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C980D884226CBC0A004D34B2 /* UIButton+Extension.swift */; };
 		C990777E22707A550044FEE9 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990777D22707A550044FEE9 /* SkillsViewController.swift */; };
-		C99BAF8F227E33FF00DFF142 /* b04.gif in Resources */ = {isa = PBXBuildFile; fileRef = C99BAF8E227E33FE00DFF142 /* b04.gif */; };
 		C99BAF91227E340F00DFF142 /* rainbow.gif in Resources */ = {isa = PBXBuildFile; fileRef = C99BAF90227E340F00DFF142 /* rainbow.gif */; };
 		C99BAF94227E350800DFF142 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C99BAF92227E350800DFF142 /* Localizable.strings */; };
 		C99BAF9C227E397800DFF142 /* ExperienceShowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99BAF9A227E397800DFF142 /* ExperienceShowTableViewCell.xib */; };
 		C99BAF9D227E397800DFF142 /* ExperienceShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BAF9B227E397800DFF142 /* ExperienceShowTableViewCell.swift */; };
+		C9D9EB76227E3F80005679CD /* nyancat.gif in Resources */ = {isa = PBXBuildFile; fileRef = C9D9EB75227E3F80005679CD /* nyancat.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +54,6 @@
 		C980D882226CB6DD004D34B2 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		C980D884226CBC0A004D34B2 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		C990777D22707A550044FEE9 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
-		C99BAF8E227E33FE00DFF142 /* b04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = b04.gif; path = ../../../../../.Trashes/501/b04.gif; sourceTree = "<group>"; };
 		C99BAF90227E340F00DFF142 /* rainbow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = rainbow.gif; path = ../../../../../../../Users/serhiyrosovskyy/.Trash/rainbow.gif; sourceTree = "<group>"; };
 		C99BAF93227E350800DFF142 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C99BAF95227E354300DFF142 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		C99BAF97227E354400DFF142 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C99BAF9A227E397800DFF142 /* ExperienceShowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExperienceShowTableViewCell.xib; sourceTree = "<group>"; };
 		C99BAF9B227E397800DFF142 /* ExperienceShowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceShowTableViewCell.swift; sourceTree = "<group>"; };
+		C9D9EB75227E3F80005679CD /* nyancat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = nyancat.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				C94D741C227E2CBA008653AB /* letter.gif */,
-				C99BAF8E227E33FE00DFF142 /* b04.gif */,
+				C9D9EB75227E3F80005679CD /* nyancat.gif */,
 				C99BAF90227E340F00DFF142 /* rainbow.gif */,
 				C94D741A227E2BC7008653AB /* bart.gif */,
 				C99BAF99227E397800DFF142 /* Cell */,
@@ -251,11 +251,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C99BAF8F227E33FF00DFF142 /* b04.gif in Resources */,
 				C94D741B227E2BC7008653AB /* bart.gif in Resources */,
 				C91A145D226B41010087035B /* LaunchScreen.storyboard in Resources */,
 				C99BAF94227E350800DFF142 /* Localizable.strings in Resources */,
 				C99BAF9C227E397800DFF142 /* ExperienceShowTableViewCell.xib in Resources */,
+				C9D9EB76227E3F80005679CD /* nyancat.gif in Resources */,
 				C99BAF91227E340F00DFF142 /* rainbow.gif in Resources */,
 				C923E63B227DE47E009FAF21 /* Assets.xcassets in Resources */,
 				C94D741D227E2CBA008653AB /* letter.gif in Resources */,
