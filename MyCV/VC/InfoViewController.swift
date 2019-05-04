@@ -50,7 +50,7 @@ class InfoViewController: UIViewController {
 
     // MARK: -Actions
     @IBAction func testTapped(_ sender: Any) {
-        UIApplication.shared.openURL(NSURL(string: experience!.url)! as URL)
+        UIApplication.shared.open(NSURL(string: experience!.url)! as URL, options: [:], completionHandler: nil)
     }
     
 

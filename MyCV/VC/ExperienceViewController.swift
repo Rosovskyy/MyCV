@@ -84,10 +84,12 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource {
         if let destination = segue.destination as? InfoViewController {
 //            switch tableView.numberOfSections {
             
-            destination.experience = ExperienceViewController.volunteering[(tableView.indexPathForSelectedRow?.row)!]
-//            case 1: destination.experience = ExperienceViewController.volunteering[(tableView.indexPathForSelectedRow?.row)!]
-//            default: fatalError()
-//            }
+            switch (tableView.indexPathForSelectedRow?.section) {
+            case 0: destination.experience = ExperienceViewController.projects[(tableView.indexPathForSelectedRow?.row)!]
+            case 1: destination.experience = ExperienceViewController.volunteering[(tableView.indexPathForSelectedRow?.row)!]
+            default: fatalError()
+            }
+
         }
     }
     

@@ -60,6 +60,8 @@ class ProfileViewController: UIViewController {
     @IBAction func aboutMeTapped(_ sender: Any) {
         changeBackgroundForButtons(sender)
         
+        aboutMeButton.setBottomBorder(UIColor.orange)
+        
         self.mainText.attributedText = changeTextColor(self.text.aboutMe, "Swift, C++ and HTML/CSS", UIColor.blue)
     }
     
