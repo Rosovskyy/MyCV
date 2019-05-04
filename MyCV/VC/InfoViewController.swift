@@ -19,8 +19,6 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var additionalLabel: UILabel!
     @IBOutlet weak var showButton: UIButton!
     
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +29,10 @@ class InfoViewController: UIViewController {
             nameLabel.text = "Name of the project: '\(experience?.name ?? "No info")'"
             periodLabel.text = "Spent time: \(experience?.period ?? "No info")"
             additionalLabel.text = "Technology used: \(experience?.work ?? "No info")"
-            showButton.isHidden = true
         } else {
             nameLabel.text = "Name of the event: '\(experience?.name ?? "No info")'"
             periodLabel.text = "Period: \(experience?.period ?? "No info")"
             additionalLabel.text = "Responsibility: \(experience?.work ?? "No info")"
-            showButton.isHidden = false
         }
         
         // Do any additional setup after loading the view.
@@ -47,6 +43,8 @@ class InfoViewController: UIViewController {
         nameLabel.numberOfLines = 0
         additionalLabel.lineBreakMode = .byWordWrapping
         additionalLabel.numberOfLines = 0
+        periodLabel.lineBreakMode = .byWordWrapping
+        periodLabel.lineBreakMode = NSLineBreakMode(rawValue: 0)!
     }
     
 

@@ -191,8 +191,8 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuT-8l-YuD">
-                                <rect key="frame" x="134.5" y="318.5" width="106" height="30"/>
-                                <state key="normal" title="Show the event"/>
+                                <rect key="frame" x="143" y="318.5" width="89" height="30"/>
+                                <state key="normal" title="Show source"/>
                                 <connections>
                                     <action selector="testTapped:" destination="Oq2-v0-XmY" eventType="touchUpInside" id="S3I-H2-R9f"/>
                                 </connections>
@@ -342,7 +342,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQj-7z-HGk">
                                 <rect key="frame" x="97" y="361" width="69" height="30"/>
-                                <state key="normal" title="Education"/>
+                                <state key="normal" title="Education">
+                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="educationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ibn-kf-y7v"/>
                                 </connections>
@@ -385,6 +387,15 @@
                                     <constraint firstAttribute="width" constant="103" id="pWK-Aj-guI"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ub8-Yq-A9c">
+                                <rect key="frame" x="178" y="361" width="62" height="30"/>
+                                <state key="normal" title="Contacts">
+                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="contactsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OV8-dk-MoV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -393,6 +404,7 @@
                             <constraint firstItem="XrM-uI-Xdo" firstAttribute="top" secondItem="R8K-tL-tX5" secondAttribute="bottom" constant="119" id="6Ns-uV-Kse"/>
                             <constraint firstItem="XrM-uI-Xdo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6Yw-y7-3S7"/>
                             <constraint firstItem="HJ1-hZ-4l2" firstAttribute="top" secondItem="cAg-46-tTp" secondAttribute="bottom" constant="8" id="9Yb-fH-m9j"/>
+                            <constraint firstItem="ub8-Yq-A9c" firstAttribute="leading" secondItem="eQj-7z-HGk" secondAttribute="trailing" constant="12" id="9hW-6u-GXV"/>
                             <constraint firstItem="cAg-46-tTp" firstAttribute="top" secondItem="R8K-tL-tX5" secondAttribute="bottom" id="Crz-Pv-MVD"/>
                             <constraint firstItem="eQj-7z-HGk" firstAttribute="leading" secondItem="J08-4O-ESf" secondAttribute="trailing" constant="14" id="GAR-SO-Yzu"/>
                             <constraint firstItem="R8K-tL-tX5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GEB-0T-CtL"/>
@@ -408,6 +420,7 @@
                             <constraint firstItem="sZC-Ea-jEg" firstAttribute="leading" secondItem="XrM-uI-Xdo" secondAttribute="trailing" constant="8" id="dXh-Ep-95C"/>
                             <constraint firstItem="J08-4O-ESf" firstAttribute="top" secondItem="XrM-uI-Xdo" secondAttribute="bottom" constant="40" id="fdH-7r-YQB"/>
                             <constraint firstItem="J08-4O-ESf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="h8c-ZW-VEQ"/>
+                            <constraint firstItem="ub8-Yq-A9c" firstAttribute="top" secondItem="mn5-ad-A8F" secondAttribute="bottom" constant="53.5" id="tNc-l6-cLg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cd6-LK-ygC" secondAttribute="trailing" constant="16" id="txT-IA-CW7"/>
                             <constraint firstItem="cd6-LK-ygC" firstAttribute="top" secondItem="J08-4O-ESf" secondAttribute="bottom" constant="8" id="yz1-bq-u3a"/>
                             <constraint firstItem="sZC-Ea-jEg" firstAttribute="top" secondItem="HJ1-hZ-4l2" secondAttribute="bottom" id="z5Y-zB-2r9"/>
@@ -420,6 +433,7 @@
                         <outlet property="mainText" destination="cd6-LK-ygC" id="UfZ-76-j6d"/>
                         <outlet property="profileImage" destination="XrM-uI-Xdo" id="v8b-2Z-a3k"/>
                         <outletCollection property="allButtons" destination="eQj-7z-HGk" collectionClass="NSMutableArray" id="gL5-tt-eHy"/>
+                        <outletCollection property="allButtons" destination="ub8-Yq-A9c" collectionClass="NSMutableArray" id="th4-ih-TUM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

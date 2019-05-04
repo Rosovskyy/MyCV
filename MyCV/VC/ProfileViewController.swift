@@ -16,8 +16,8 @@ class ProfileViewController: UIViewController {
     // MARK: -IBOutlets
     @IBOutlet weak var mainText: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
-    @IBOutlet var allButtons: [UIButton]!
     @IBOutlet weak var aboutMeButton: UIButton!
+    @IBOutlet var allButtons: [UIButton]!
     
 
     override func viewDidLoad() {
@@ -37,12 +37,10 @@ class ProfileViewController: UIViewController {
         let sender = sender as? UIButton
         sender!.setBottomBorder(UIColor.orange)
         
-        for button in allButtons {
-            if sender != button {
-                button.setBottomBorder(UIColor.white)
-                if let viewWithTag = self.view.viewWithTag(100) {
-                    viewWithTag.removeFromSuperview()
-                }
+        for button in allButtons.filter({$0 != sender}) {
+            button.setBottomBorder(UIColor.white)
+            if let viewWithTag = self.view.viewWithTag(100) {
+                viewWithTag.removeFromSuperview()
             }
         }
     }
@@ -69,6 +67,15 @@ class ProfileViewController: UIViewController {
         changeBackgroundForButtons(sender)
         
         self.mainText.text = self.text.education
+    }
+    
+    
+    @IBAction func contactsTapped(_ sender: Any) {
+        
+        changeBackgroundForButtons(sender)
+        
+        self.mainText.text = self.text.contacts
+        
     }
     
 }

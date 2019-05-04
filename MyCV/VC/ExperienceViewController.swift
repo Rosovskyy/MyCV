@@ -12,8 +12,8 @@ class ExperienceViewController: UIViewController {
     
     // MARK: -Properties
     static let projects = [
-        Experience(type: "Project", name: "Foober", work: "Swift, Firebase", period: "3 days", url: "NONE"),
-        Experience(type: "Project", name: "Problem Solver", work: "Python, Django, MongoDB", period: "25 days", url: "NONE"),
+        Experience(type: "Project", name: "Foober", work: "Swift, Firebase", period: "3 days", url: "https://github.com/Rosovskyy/fuber"),
+        Experience(type: "Project", name: "Problem Solver", work: "Python, Django, MongoDB", period: "25 days", url: "https://github.com/Rosovskyy/courseWorkBySerhiyRosovskyy"),
     ]
     
     static let volunteering = [
