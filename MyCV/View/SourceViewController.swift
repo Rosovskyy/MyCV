@@ -19,17 +19,26 @@ class SourceViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
 
+    fileprivate func webViewConfiguration() {
+        let request = URLRequest(url: URL(string: self.finalURL)!)
+        self.webView.load(request)
+
+        self.webView.addObserver(self,
+                                 forKeyPath: #keyPath(WKWebView.isLoading),
+                                 options: .new,
+                                 context: nil)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let request = URLRequest(url: URL(string: finalURL)!)
-        self.webView.load(request)
-        
-        self.webView.addObserver(self, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
-        // Do any additional setup after loading the view.
+        self.webViewConfiguration()
     }
     
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    override func observeValue(forKeyPath keyPath: String?,
+                               of object: Any?,
+                               change: [NSKeyValueChangeKey : Any]?,
+                               context: UnsafeMutableRawPointer?) {
         if keyPath == "loading" {
             if webView.isLoading {
                 activityIndicator.startAnimating()

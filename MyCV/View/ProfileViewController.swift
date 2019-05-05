@@ -21,19 +21,25 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var nyanCatGif: UIImageView!
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        self.profileImage.roundedBorder(40)
-        
+    fileprivate func textConfiguration() {
         self.mainText.lineBreakMode = .byWordWrapping
         self.mainText.numberOfLines = 0
-        
+
         self.mainText.text = NSLocalizedString("aboutMeInfo", comment: "About Me Info")
+    }
+
+    fileprivate func viewsBorderConfiguration() {
+        self.profileImage.roundedBorder(40)
+        self.aboutMeButton.setBottomBorder(UIColor.orange)
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
+        self.textConfiguration()
+        self.viewsBorderConfiguration()
         self.nyanCatGif.loadGif(name: "nyancat")
     
-        self.aboutMeButton.setBottomBorder(UIColor.orange)
     }
     
     func changeBackgroundForButtons(_ sender: Any) {
